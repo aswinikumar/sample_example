@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} welcome to the homepage {% endblock %}
+{% block content%}
+<h1>Sign In</h1>
+<form action="" method="POST">
+
+<P> please enter your Name: <input type="text" name="name1"> </P>
+
+<p> <input type="submit" value="signin" name="submit"> </p>
+</form>
+
+{% if name %}
+<h1>Hello ,{{ name }}</h1>
+{% endif %}
+
+{% endblock %}

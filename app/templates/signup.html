@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" ">
+  <meta name="author" content="">
+    <title>Sign up form</title>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello Stranger</h1>
+{% endif %}
+
+<section>
+        <div class="row">
+            
+            <div class="col-md-5" >
+
+            </div><!-- col-sm-7 -->
+            
+            <div class="col-md-7" style="margin-right:5% 35%;padding-right:20%">
+             <form action="" method="POST" enctype="multipart/form-data">
+                    <h2 style="text-align:center">Sign Up Form</h2>
+      <input type="text"  class="form-control "placeholder="Username" value="{{ form.firstname}}"> <br>
+      <input type="text"  class="form-control "placeholder="lastname" value="{{ form.lastname }}"> <br>
+      <input type="email"  class="form-control "placeholder="xxx@123.com/in" value="{{ form.email }}"> <br>
+      <input type="date"  class="form-control "placeholder="enter your DOB" value="{{form.birthday }}"> <br>
+      {{ form.gender(class="form-control") }}<br>
+      <input type="text"  class="form-control "placeholder="username" value="{{form.username}}"> <br>
+      <input type="password"  class="form-control "placeholder="enter your pasword" value="{{ form.password }}"> <br>
+      <input type="text"  class="form-control "placeholder="feedback" value="{{form.comments}}" > <br>
+     {{ form.accept_rules() }} {{ form.accept_rules.label }} <br> 
+   <!--              
+    {{ form.firstname(class="form-control", placeholder="Firstname") }} <br>
+  	   
+  	{{ form.lastname(class="form-control", placeholder="Lastname") }} <br>
+  	
+   {{ form.email(class="form-control", placeholder="Email") }} <br>
+  	   
+   {{ form.birthday(class="form-control", placeholder="date of birth(dd-mm-yyyy)") }}<br>
+  	 
+   {{ form.gender(class="form-control") }}<br>
+  	    
+   {{ form.username(class="form-control uname", placeholder="Username",value="") }} <br>
+  	   
+   {{ form.password(class="form-control pword", placeholder="Password",value="" ) }} <br>
+
+   {{ form.comments(class="form-control comment", placeholder="please comment",value="" ) }} <br>
+
+   {{ form.accept_rules() }} {{ form.accept_rules.label }} <br> -->
+		 
+                    <input type="submit" value="register" class="btn btn-success btn-block">
+                </form>
+            </div><!-- col-sm-5 -->
+            
+        </div><!-- row -->
+        
+      
+        
+    </div><!-- signin -->
+  
+</section>
+
+
+<script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

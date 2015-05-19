@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} welcome to login page {% endblock %}
+{% block content%}
+<h1>Sign In</h1>
+<form  method="POST" >
+
+<P>Username : <input type="text" name="name1" value=""> 
+Password :<input type="password" name="pswrd" value="">
+</P>
+
+<p ><input type="submit" value="Sign In" style="background-color:#00FFFF;width:70px;height:30px;border-color:#00FFFF;"></p>
+</form>
+
+{% if name1 %}
+<h1> Hello {{name1}} your password is {{pswrd}}</h1>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %} testing the forms submission {% endtitle %}
+<h1> welcome to our website .</h1>
+
+<form method="POST">
+{{ form.name.label }} {{ form.name() }}
+{{ form.submit() }}
+</form>

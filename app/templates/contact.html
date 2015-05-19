@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Contact</h2>
+  <form action="{{ url_for('contact') }}" method="post">
+  
+ 
+    {{ form.name.label }} &nbsp&nbsp&nbsp&nbsp
+    {{ form.name }}<br> <br>
+ 
+    {{ form.email.label }}&nbsp&nbsp&nbsp&nbsp&nbsp
+    {{ form.email }} <br> <br>
+ 
+    {{ form.subject.label }}&nbsp&nbsp
+    {{ form.subject }} <br> <br>
+ 
+    {{ form.mobile.label }}&nbsp
+    {{ form.mobile }}  <br> <br>
+
+    {{ form.message.label }}&nbsp
+    {{ form.message }}  <br> <br>
+ 
+    {{ form.submit }}
+  </form>
+{% endblock %}

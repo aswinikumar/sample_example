@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+<style> 
+      .R{
+      color:red;
+}
+</style>
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+<div class="container">
+<div class="row">
+<div class="coll-md-6">
+
+</div>
+<div class="coll-md-6" style="float:right;padding-right:10%">
+	<form action="" method="POST" role="form"> <h2 style="text-align:center"><bold>Sign up form</bold></h2>
+	
+	
+		<!-- inserting user registration forms -->
+	<div class="form-group">
+	        <label>Choose your Username<span class="R">*</span></label><input type="text" class="form-control" placeholder="choose a username" name="username" value="{{ request.form.username }}"required> <br>
+
+			<label>First Name<span class="R">*</span></label><input type="text" class="form-control" placeholder="First Name" name="fname" value="{{ request.form.fname }}"required> <br>
+
+			<label>Second Name<span class="R">*</span></label><input type="text" class="form-control" placeholder="Last Name" name="lname" value="{{ request.form.lname }}" required> <br>
+
+			<label>Date Of Birth<span class="R">*</span></label><input type="text"  class="form-control" placeholder="DOB" name="dob" value="{{ request.form.dob }}" required> <br>
+
+			<label>Email Id<span class="R">*</span></label><input type="email"  class="form-control" placeholder="xxx@xxx.com" name="usr_email" value="{{ request.form.usr_email }}"required> <br>
+
+			<label>Alternate Email Id<span class="R">*</span></label><input type="email"  class="form-control" placeholder="xxx@xxx.com" name="check_usr_email"  value="{{ request.form.check_usr_email }}"required> <br>
+
+			<label>Mobile number<span class="R">*</span></label> <input type="text" class="form-control" placeholder="Enter your Mobile number" name="mbl_num" value="{{ request.form.mbl_num }}" required> <br>
+
+			<label>Address<span class="R">*</span></label> <input type="text" class="form-control" placeholder="Enter your Address" name="usr_address" value="{{ request.form.usr_address }}" required> <br>
+
+			<label>Choose a Password<span class="R">*</span></label> <input type="password" class="form-control" placeholder="choose a password" name="password" value="{{ request.form.password }}" required> <br>
+
+			<label>re-enter your password<span class="R">*</span></label> <input type="password" class="form-control" placeholder="re-enter the password" name="check_pswrd" value="{{ request.form.check_pswrd }}" required> <br>
+
+	</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+		</div>
+		</div>
+		<!-- end regestration forms -->
+    
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
